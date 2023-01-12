@@ -18,30 +18,30 @@ class Program
         Console.WriteLine("==========================================");
         Console.WriteLine("|             Test 1                      |");
         Console.WriteLine("==========================================");
-        Console.WriteLine("===================Cara 1=================");
-        for (int i = 1; i <= 3; i++)
-        {
-            for (int j = 1; j <= 5; j++)
-            {
-                Console.Write(j);
-                if (j == 5)
-                {
-                    Console.WriteLine();
-                    for (int l = 5; l >= 1; l--)
-                    {
-                        Console.Write(l);
-                        if (l == 1)
-                        {
-                            Console.WriteLine();
-                        }
+        //Console.WriteLine("===================Cara 1=================");
+        //for (int i = 1; i <= 3; i++)
+        //{
+        //    for (int j = 1; j <= 5; j++)
+        //    {
+        //        Console.Write(j);
+        //        if (j == 5)
+        //        {
+        //            Console.WriteLine();
+        //            for (int l = 5; l >= 1; l--)
+        //            {
+        //                Console.Write(l);
+        //                if (l == 1)
+        //                {
+        //                    Console.WriteLine();
+        //                }
 
-                    }
-                }
+        //            }
+        //        }
 
-            }
+        //    }
 
-        }
-        Console.WriteLine("===================Cara 2=================");
+        //}
+        //Console.WriteLine("===================Cara 2=================");
         for (int i = 1; i <= 3; i++)
         {
             int x = 1;
@@ -59,7 +59,6 @@ class Program
             };
             Console.WriteLine();
         }
-        Console.WriteLine();
 
     }
 
@@ -116,17 +115,25 @@ class Program
         Console.WriteLine("==========================================");
         Console.WriteLine("|             Test 3                      |");
         Console.WriteLine("==========================================");
-        int x = 1, y = 1; /*z = 1;*/
 
 
+        //int x = 1, y = 1, z = 1;
+        //int jumlah = InputInt("Masukan jumlah bilangan fibonacci = ");
+        //for (int i = 0; i < jumlah; i++)
+        //{
+        //    Console.Write(z + " ");
+        //    z = x + y;
+        //    x = y;
+        //    y = z;
+        //}
+        //Console.Read();
+
+        int x = 1, y = 1; 
         int jumlah = InputInt("Masukan jumlah bilangan fibonacci = ");
         for (int i = 0; i < jumlah; i++)
         {
             Console.Write(y + " ");
             (x, y) = (y, x + y);
-            //z = x + y;
-            //x = y;
-            //y = z;
         }
         Console.Read();
 
